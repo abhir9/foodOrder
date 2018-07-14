@@ -11,3 +11,5 @@ Make Sure mongodb installed and running on port 27017 without authentication.
 # step:3  'npm install' in both ui/api directory 
 
 # step:4  'npm start' in both directory
+
+ui will automatically run on localhost:3000 
