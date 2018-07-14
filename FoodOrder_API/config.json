@@ -1,0 +1,7 @@
+﻿{
+    "connectionString": "mongodb://localhost:27017/UserMgmt_Abhi",
+    "apiUrl": "http://localhost/",
+    "appName": "/api/",
+    "serverPort":5040,
+    "secretKey": "As@09#$%_q1"
+}
