@@ -7,9 +7,11 @@ this ia very simple project there is lot scope to do Authorisation/ Authenticati
 
 # step:2   install MongoDb in System and run it 
 Make Sure mongodb installed and running on port 27017 without authentication.
-
+import bson file which is present in https://github.com/abhir9/foodOrder to 'UserMgmt_Abhi' database in mongodb.
 # step:3  'npm install' in both ui/api directory 
 
 # step:4  'npm start' in both directory
 
 ui will automatically run on localhost:3000 
+
+
