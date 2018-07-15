@@ -1,10 +1,9 @@
 ﻿/**
  * Created by abhi on 7/14/2018.
  */
-import { Component, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs/Subscription';
-
-import { AlertService } from '../_services/index';
+import {Component, OnDestroy} from '@angular/core';
+import {Subscription} from 'rxjs/Subscription';
+import {AlertService} from '../_services/index';
 import {timeout} from "rxjs/operator/timeout";
 
 @Component({
@@ -12,21 +11,23 @@ import {timeout} from "rxjs/operator/timeout";
     selector: 'alert',
     templateUrl: 'alert.component.html'
 })
-
 export class AlertComponent implements OnDestroy {
-    private subscription: Subscription;
     message: any;
+    private subscription: Subscription;
 
-    constructor(private alertService: AlertService) { 
+    constructor(private alertService: AlertService) {
         // subscribe to alert messages
-        this.subscription = alertService.getMessage().subscribe(message => { this.message = message; });
+        this.subscription = alertService.getMessage().subscribe(message => {
+            this.message = message;
+        });
     }
 
     ngOnDestroy(): void {
         // unsubscribe on destroy to prevent memory leaks
         this.subscription.unsubscribe();
     }
-    removeMessage():void{
-        this.message='';
+
+    removeMessage(): void {
+        this.message = '';
     }
 }

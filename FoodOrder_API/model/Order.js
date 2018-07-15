@@ -38,7 +38,6 @@ function getById(_id) {
 function create(orderParam) {
     var deferred = Q.defer();
     // validation
-    console.log(orderParam);
         db.orders.insert(
             orderParam,
             function (err, doc) {
